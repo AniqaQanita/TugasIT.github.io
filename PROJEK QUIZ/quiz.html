@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="quiz.js">
+    <title>Konstelk</title>
+    <head>
+    </head>
+    <body>
+
+        <img src="logo.png" alt="img" id="img" class="img">
+        <h1 id="title">Konstelk</h1>
+    
+    <table>
+        <tr>
+           <td>Nama:</td>
+           <td><input type="text" name="name" placeholder="Masukkan Nama"></td>
+        </tr>
+        <tr>
+           <td>Jenis Kelamin</td>
+           <td>
+              <input type="radio" name="gender_type" value="Laki-Laki">Laki-Laki
+              <input type="radio" natime="sex_sex" value="Perempuan">Perempuan
+           </td>
+        </tr>
+       <tr>
+         <td> Kelas: </td>
+         <td> <input type="text" name="kelas" placeholder="Masukkan Kelas"> </td>
+       </tr>
+       <tr>
+        <td> NIS: </td>
+        <td> <input type="text" name="NIS" placeholder="Masukkan NIS"> </td>
+      </tr>
+    </table>
+    
+   
+    <!-- quiz-container -->
+    <div id="quiz-container">
+        <!-- question container -->
+        <div class="questions">
+            <h2 id="question"></h2>
+            <ol type="A">
+                <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+            </ol>
+            <h4 id="stat"></h4>
+        </div>
+
+        <div class="buttons">
+            <button type="button" class="next">Next</button>
+        </div>
+
+    </div>
+        
+    <!-- scoreboard section -->
+    <div id="scoreboard">
+        <img src="logo.png" alt="">
+        <h2 id="score-title">Jika score mu rendah, Hubungi BK jika anda ingin dibantu, Semangat!</h2>
+        <h2 id="score"></h2>
+    </div>
+
+
+    <!-- javascript file source -->
+    <script src="quiz.js"></script>
+</body>
+</html>
